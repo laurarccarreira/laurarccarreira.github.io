@@ -6720,7 +6720,7 @@ fieldset:disabled .btn {
   justify-content: center;
   width: 15%;
   padding: 0;
-  color: #fff;
+  /* color: #fff; */
   text-align: center;
   background: none;
   border: 0;
@@ -6740,7 +6740,7 @@ fieldset:disabled .btn {
 .carousel-control-prev:focus,
 .carousel-control-next:hover,
 .carousel-control-next:focus {
-  color: #fff;
+  color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity));
   text-decoration: none;
   outline: 0;
   opacity: 0.9;
