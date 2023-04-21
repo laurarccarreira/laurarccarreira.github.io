@@ -11,6 +11,10 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Bootstrap icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Fontawesome fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
 </head>
@@ -60,26 +64,27 @@
     </header>
 
     <!-- Carousel -->
-    <div id="carouselExampleAutoplaying" class="carousel slide mx-auto" data-bs-ride="carousel">
-        <div class="carousel-inner img-fluid">
+    <div id="carouselExampleAutoplaying" class="carousel slide mx-auto my-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="assets/images/porto_pt_3.jpg" class="d-block" alt="Porto - Portugal">
+                <img src="assets/images/porto_pt.jpg" class="d-block w-50 mx-auto rounded-2" alt="Porto - Portugal">
             </div>
             <div class="carousel-item">
-                <img src="assets/images/napoli_it.jpg" class="d-block" alt="Nápoles - Itália">
+                <img src="assets/images/napoli_it.jpg" class="d-block w-50 mx-auto rounded-2" alt="Nápoles - Itália">
             </div>
             <div class="carousel-item">
-                <img src="assets/images/rio_br.jpg" class="d-block" alt="Rio de Janeiro - Brasil">
+                <img src="assets/images/rio_br.jpg" class="d-block w-50 mx-auto rounded-2"
+                    alt="Rio de Janeiro - Brasil">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
             data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <i class="fa fa-angle-left fa-3x" aria-hidden="true"></i>
             <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
             data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <i class="fa fa-angle-right fa-3x" aria-hidden="true"></i>
             <span class="visually-hidden">Next</span>
         </button>
     </div>
