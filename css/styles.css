@@ -11,6 +11,17 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+#map {width: 900px; height: 600px }
+
+ .div-article {
+  margin-left: 57vh;
+  margin-right: 57vh;
+}
+
+main {
+  min-height: 100vh;
+}
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
