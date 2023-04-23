@@ -9,7 +9,7 @@
     <meta name="author" content="" />
     <title>Receitinhas</title>
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
     <!-- Bootstrap icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Fontawesome fonts -->
@@ -18,8 +18,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Leaflet css -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
-     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
-     crossorigin=""/>
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="../css/styles.css" rel="stylesheet" />
 </head>
@@ -27,54 +26,37 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container px-4 px-lg-5">
-            <a class="navbar-brand" href="../index.html">Food Eat</a>
+            <a class="navbar-brand" href="../index.html">Food Eat <i class='fas fa-pepper-hot'></i></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                    <!-- <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li> -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">Tipos de Cozinha</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="./portuguesa.html">Portuguesa</a></li>
-                            <!-- <li><hr class="dropdown-divider" /></li> -->
                             <li><a class="dropdown-item" href="./brasileira.html">Brasileira</a></li>
                             <li><a class="dropdown-item" href="./italiana.html">Italiana</a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
                 </ul>
-                <!-- <form class="d-flex">
-                        <button class="btn btn-outline-dark" type="submit">
-                            <i class="bi-cart-fill me-1"></i>
-                            Cart
-                            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
-                        </button>
-                    </form> -->
             </div>
         </div>
     </nav>
-    <main class="mainabout">
+    <main class="main-about">
         <div class="div-article">
             <h2 class="my-4">Quem Somos?</h2>
             <p>
-                Estudantes de Engenharia de Computadores e Infomática na Universidade de Aveiro.
+                Estudantes de Engenharia de <h1> <strong> Computadores e Infomática </strong> </h1>, e Engenharia biomédicas da Universidade de Aveiro.
             </p>
-            <h2 class="my-4">Onde Estamos?</h2>
-            <div id="map"></div>
-
-            <h2 class="h2-title"> Recursos </h2>
-            <p> Para a realização deste projeto recorremos a vários websites, em baixo listados:</p>
-            <ul class="links">
-                <li><a class="" href="" >bla.bla.com</a></li>
-            </ul>
         </div>
     </main>
 
     <!-- Footer-->
-    <footer class="py-5 bg-dark text-center">
+    <footer class="py-5 text-center" style="background-color:cadetblue;">
         <div class="container text-white">
             <a href="https://www.instagram.com/gordongram/"><i class="bi bi-instagram"></i></a>
             <a href="https://twitter.com/gordonramsay"><i class="bi bi-twitter"></i></a>
@@ -83,17 +65,20 @@
             <p class="m-0">Copyright &copy; Receitinhas 2023</p>
         </div>
     </footer>
+
+    <!-- Jquery cdn-->
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+
     <!-- Leaflet js -->
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
-     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
-     crossorigin=""></script>
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
 
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core theme JS-->
-    <script src="../js/scripts.js"></script>
-
+     <!-- HERE!!! -->
 </body>
 
 </html>
