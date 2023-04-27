@@ -11,6 +11,20 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+/* General */
+.col .card:hover{
+  animation: card_zoom 300ms forwards;
+}
+@keyframes card_zoom {
+  100%{
+    transform: scale(1.1);
+  }
+}
+/* index */
+
+/* Cozinha */
+
 #map {
   width: 700px;
   height: 600px;
