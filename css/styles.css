@@ -25,6 +25,26 @@
 
 /* Cozinha */
 
+/* About */
+.div-article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.about-topic{
+  width: 100%;
+  padding: 10px 0px;
+  background-color: #5F9EA0;
+}
+.about-info{
+  margin-top: 30px;
+  width: 50%;
+}
+.about-info li{
+  text-align: left;
+}
+
 #map {
   width: 700px;
   height: 600px;
