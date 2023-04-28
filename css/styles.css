@@ -51,6 +51,15 @@
   background-color: #edd2a4;
   color: #563c24;
 }
+.item-details{
+  margin: 0;
+  padding: 0;
+}
+.item-details li{
+  width: 100%;
+  list-style: none;
+  text-align: center;
+}
 
 /* About */
 .div-article {
