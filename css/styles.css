@@ -13,10 +13,9 @@
  */
 
 /* General */
-.col .card:hover {
+.card.item:hover {
   animation: card_zoom 300ms forwards;
 }
-
 @keyframes card_zoom {
   100% {
     transform: scale(1.1);
