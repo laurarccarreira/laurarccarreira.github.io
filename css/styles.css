@@ -11,6 +11,40 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+/* General */
+.col .card:hover{
+  animation: card_zoom 300ms forwards;
+}
+@keyframes card_zoom {
+  100%{
+    transform: scale(1.1);
+  }
+}
+/* index */
+
+/* Cozinha */
+
+/* About */
+.div-article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.about-topic{
+  width: 100%;
+  padding: 10px 0px;
+  background-color: #5F9EA0;
+}
+.about-info{
+  margin-top: 30px;
+  width: 50%;
+}
+.about-info li{
+  text-align: left;
+}
+
 #map {
   width: 700px;
   height: 600px;
