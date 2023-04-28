@@ -13,17 +13,52 @@
  */
 
 /* General */
-.col .card:hover{
+.col .card:hover {
   animation: card_zoom 300ms forwards;
 }
+
 @keyframes card_zoom {
-  100%{
+  100% {
     transform: scale(1.1);
   }
 }
+
 /* index */
+.div-index {
+  background-color: #edd2a4;
+  color: #563c24;
+}
+
+/* Footer Icons */
+.footer-icons {
+  color: #563c24;
+}
 
 /* Cozinha */
+
+/* About */
+.div-article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.about-topic {
+  width: 100%;
+  padding: 10px 0px;
+  background-color: #edd2a4;
+  color: #563c24;
+}
+
+.about-info {
+  margin-top: 30px;
+  width: 50%;
+}
+
+.about-info li {
+  text-align: left;
+}
 
 #map {
   width: 700px;
@@ -150,6 +185,8 @@ footer {
   left: 0;
   right: 0;
   margin-top: auto;
+  background-color: #edd2a4;
+  color: #563c24;
 }
 
 hr {
