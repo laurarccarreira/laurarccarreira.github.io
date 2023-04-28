@@ -27,6 +27,19 @@
   background-color: #edd2a4;
   color: #563c24;
 }
+.receita-da-semana{
+  box-shadow: 2px 5px 20px 0px;
+}
+#map {
+  width: 700px;
+  height: 600px;
+  margin: auto
+}
+.map-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* Footer Icons */
 .footer-icons {
@@ -45,44 +58,26 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  text-align: center;
 }
-
 .about-topic {
   width: 100%;
   padding: 10px 0px;
   background-color: #edd2a4;
   color: #563c24;
 }
-
 .about-info {
   margin-top: 30px;
   width: 50%;
 }
-
 .about-info li {
   text-align: left;
-}
-
-#map {
-  width: 700px;
-  height: 600px;
-  margin: auto
-}
-
-.map-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .main-about {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.div-article {
-  text-align: center;
 }
 
 :root {
