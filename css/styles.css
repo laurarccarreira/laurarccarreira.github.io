@@ -60,6 +60,23 @@
   list-style: none;
   text-align: center;
 }
+/* Chefs */
+.chef-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.chef-picture{
+
+}
+.chef-picture img{
+  border-radius: 100%;
+}
+.chef-info{
+
+}
 
 /* About */
 .div-article {
