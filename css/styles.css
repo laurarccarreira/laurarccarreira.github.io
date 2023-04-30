@@ -86,8 +86,34 @@
 .chef-intro img{
   border-radius: 100%;
 }
-
-
+/* Dicas e Truques */
+.search-dicas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.search-btn{
+  border: 1px solid #563c24;
+  border-radius: 8px;
+  padding: 5px 10px;
+  background-color: #f2e0bf;
+}
+.search-btn:hover{
+  background-color: #563c24;
+  color: white;
+  transition-duration: 400ms;
+}
+.dicas-list{
+  font-size: 20px;
+}
+.dicas-list li{
+  margin-bottom: 20px;
+}
+.no-display{
+  display: none;
+}
 /* About */
 .div-article {
   display: flex;
