@@ -69,14 +69,14 @@
   gap: 20px;
   text-align: justify;
 }
-.chef-picture{
+.chef-intro{
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 50px;
 }
 
-.chef-picture img{
+.chef-intro img{
   border-radius: 100%;
 }
 .chef-info{
