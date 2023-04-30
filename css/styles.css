@@ -51,7 +51,69 @@
   background-color: #edd2a4;
   color: #563c24;
 }
-
+.item-details{
+  margin: 0;
+  padding: 0;
+}
+.item-details li{
+  width: 100%;
+  list-style: none;
+  text-align: center;
+}
+/* Cozinha Modals */
+.ingredientes-receita{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.is-6{
+  grid-column: auto/span 6;
+}
+/* Chefs */
+.chef-container p{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: justify;
+}
+.chef-intro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.chef-intro img{
+  border-radius: 100%;
+}
+/* Dicas e Truques */
+.search-dicas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.search-btn{
+  border: 1px solid #563c24;
+  border-radius: 8px;
+  padding: 5px 10px;
+  background-color: #f2e0bf;
+}
+.search-btn:hover{
+  background-color: #563c24;
+  color: white;
+  transition-duration: 400ms;
+}
+.dicas-list{
+  font-size: 20px;
+}
+.dicas-list li{
+  margin-bottom: 20px;
+}
+.no-display{
+  display: none;
+}
 /* About */
 .div-article {
   display: flex;
