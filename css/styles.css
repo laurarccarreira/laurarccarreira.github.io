@@ -60,6 +60,14 @@
   list-style: none;
   text-align: center;
 }
+/* Cozinha Modals */
+.ingredientes-receita{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.is-6{
+  grid-column: auto/span 6;
+}
 /* Chefs */
 .chef-container p{
   display: flex;
@@ -75,13 +83,10 @@
   align-items: center;
   gap: 50px;
 }
-
 .chef-intro img{
   border-radius: 100%;
 }
-.chef-info{
 
-}
 
 /* About */
 .div-article {
