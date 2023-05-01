@@ -1,7 +1,7 @@
 var map = L.map('map').setView([40.63327715251739, -8.659529757486075], 18);
 
 var myIcon = L.icon({
-    iconUrl: '../assets/university.png',
+    iconUrl: '../assets/icons/university.png',
     iconSize: [40, 40],
     iconAnchor: [28, 35],
     popupAnchor: [0, -40]
