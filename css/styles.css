@@ -11,6 +11,42 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+ article {
+	max-width: 80%;
+	margin: 0 auto;
+	padding: clamp(1rem, 2vw, 3rem);
+}
+
+article > * + * {
+	margin-top: 1rem;
+}
+
+dl {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: 0.5rem 0;
+}
+
+dl > * {
+	background: antiquewhite;
+	padding: 1rem;
+}
+
+dl > :nth-of-type(2n) {
+	background: rgb(255, 250, 244);
+}
+
+dt {
+	font-weight: 700 ;
+	font-size: 1.8rem ;
+}
+
+dd {
+	margin: 0 !important;
+	padding: 1rem;
+	display: flex;
+	align-items: center;
+}
 
 /* General */
 .card.item:hover {
