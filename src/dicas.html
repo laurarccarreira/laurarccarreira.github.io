@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Sabores da Terra</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="../assets/pepper-hot-solid.svg" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Fontawesome fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="../css/styles.css" rel="stylesheet" />
+</head>
+
+<body style="background-color: #f2e0bf">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #edd2a4;">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="../index.html">Sabores da Terra<i class='fas fa-pepper-hot m-2'></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Tipos de Cozinha</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="./portuguesa.html">Portuguesa</a></li>
+                            <li><a class="dropdown-item" href="./brasileira.html">Brasileira</a></li>
+                            <li><a class="dropdown-item" href="./italiana.html">Italiana</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="./chefs.html">Chefes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./dicas.html">Dicas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Header-->
+    <header class="py-4" style="background-color: #edd2a4;">
+        <div class="container px-4 px-lg-5 my-2 div-cozinha">
+            <div class="text-center">
+                <h1 class="display-4 fw-bolder">
+                    Culinária
+                </h1>
+                <h3 class="fw-normal">
+                    Dicas e Truques
+                </h3>
+            </div>
+        </div>
+    </header>
+    <div class="search-dicas text-center mt-4">
+        <input class="form-control-sm search-input" type="text" id="dicas-filter" list="datalist-dicas">
+        <button class="search-btn" id="search-dicas">Search <i class="bi bi-search"></i></button>
+        <datalist id="datalist-dicas">
+        </datalist>
+    </div>
+    <div class="dicas-container">
+        <ul class="dicas-list" id="dicas-list">
+            <li>Para evitar que os ovos rachem durante o cozimento, adicione uma colher de chá de vinagre à água antes de ferver.</li>
+            <li>Para remover facilmente as sementes de uma romã, corte-a ao meio e bata delicadamente a parte de trás com uma colher de pau sobre uma tigela.</li>
+            <li>Para evitar que o alho queime quando fritar, adicione-o ao óleo já aquecido em vez de adicionar ao óleo frio.</li>
+            <li>Para descascar facilmente uma batata, ferva-a com a casca por alguns minutos e depois mergulhe-a em água gelada por alguns segundos antes de descascar.</li>
+            <li>Para amolecer a manteiga rapidamente, corte-a em cubos pequenos e deixe-a em temperatura ambiente por alguns minutos.</li>
+            <li>Para manter as ervas frescas por mais tempo, lave-as, seque-as bem e armazene-as em um recipiente com tampa na geladeira.</li>
+            <li>Para fazer a clara de ovo ficar em neve rapidamente, adicione uma pitada de sal ou algumas gotas de suco de limão antes de bater.</li>
+            <li>Para evitar que o açúcar mascavo fique duro, guarde-o em um recipiente hermético com um pedaço de pão ou maçã.</li>
+            <li>Para descascar facilmente o gengibre, use a ponta de uma colher para raspar a pele.</li>
+            <li>Para evitar que o queijo rale se desfaça, coloque-o no congelador por alguns minutos antes de ralar.</li>
+            <li>Para fazer purê de batata mais cremoso, adicione um pouco de queijo creme e leite quente.</li>
+            <li>Para remover o cheiro forte de alho das mãos, esfregue as mãos em uma colher de aço inoxidável sob água corrente.</li>
+            <li>Para impedir que as cebolas façam você chorar, coloque-as no congelador por alguns minutos antes de cortá-las.</li>
+            <li>Para assar um bolo uniformemente, certifique-se de que o forno esteja completamente pré-aquecido antes de colocar o bolo no forno.</li>
+            <li>Para evitar que o leite transborde ao ferver, coloque uma colher de pau na panela.</li>
+            <li>Para fazer um caldo caseiro delicioso, use sobras de carne e ossos, legumes e ervas.</li>
+            <li>Para adicionar sabor extra aos seus pratos, use ervas frescas em vez de secas sempre que possível.</li>
+            <li>Para fazer legumes crocantes, asse-os em vez de cozinhar em água.</li>
+            <li>Para fazer uma marinada deliciosa, misture óleo, vinagre, ervas e especiarias em uma tigela e deixe a carne ou legumes marinar por algumas horas antes de cozinhar.</li>
+            <li>Para evitar que a salada fique murcha, misture os ingredientes do molho em uma tigela separada e adicione à salada apenas na hora de servir.</li>
+            <li>Para dar um sabor defumado aos seus pratos, use um pouco de sal defumado ou adicione algumas lascas de madeira de fumo ao seu grelhado.</li>
+            <li>Para tornar o arroz mais saboroso, cozinhe-o em caldo de frango ou vegetais em vez de água.</li>
+            <li>Para evitar que os alimentos grudem na panela, aqueça a panela antes de adicionar o óleo ou manteiga.</li>
+            <li>Para fazer um molho cremoso para massas, adicione um pouco de creme de leite ou queijo ralado ao molho de tomate.</li>
+            <li>Para cozinhar frango uniformemente, corte-o em pedaços menores antes de cozinhar.</li>
+            <li>Para fazer uma sobremesa rápida e fácil, misture frutas picadas com iogurte e um pouco de mel.</li>
+            <li>Para remover facilmente a casca de uma banana, pressione a extremidade oposta ao caule com um garfo e puxe a casca.</li>
+            <li>Para fazer uma salada mais crocante, adicione croutons caseiros em vez de croutons comprados em loja.</li>
+            <li>Para fazer pão caseiro mais macio, adicione um pouco de leite em pó à massa.</li>
+            <li>Para evitar que as batatas fiquem moles, não lave antes de armazená-las e mantenha em local fresco e seco.</li>
+            <li>Para fazer uma sobremesa rápida e deliciosa, corte algumas frutas em pedaços e cubra com chantilly caseiro.</li>
+            <li>Para fazer um guacamole cremoso, adicione um pouco de creme de leite à mistura de abacate.</li>
+            <li>Para fazer um molho de salada saudável, misture azeite, vinagre balsâmico e mostarda dijon.</li>
+            <li>Para fazer um frango mais suculento, adicione um pouco de iogurte à marinada antes de cozinhar.</li>
+            <li>Para fazer uma salada mais saborosa, adicione frutas frescas ou secas, nozes e queijos em cubos.</li>            
+        </ul>
+    </div>
+
+    <!-- Footer-->
+    <footer class="py-5 text-center">
+        <div class="container">
+            <a href="https://www.instagram.com/gordongram/"><i class="bi bi-instagram footer-icons"></i></a>
+            <a href="https://twitter.com/gordonramsay" class="ms-1"><i class="bi bi-twitter footer-icons"></i></a>
+            <a href="https://www.facebook.com/gordonramsay" class="ms-1"><i class="bi bi-facebook footer-icons"></i></a>
+            <a href="https://www.youtube.com/channel/UCIEv3lZ_tNXHzL3ox-_uUGQ" class="ms-1"><i
+                    class="bi bi-youtube footer-icons"></i></a>
+            <p class="m-0">Copyright &copy; Sabores da Terra 2023</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core theme JS-->
+    <!-- HERE! -->
+    <script src="../js/dicas.js"></script>
+</body>
+
+</html>

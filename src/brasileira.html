@@ -20,8 +20,9 @@
     <link href="../css/styles.css" rel="stylesheet" />
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<body style="background-color: #f2e0bf">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #edd2a4;">
         <div class="container px-4 px-lg-5">
             <a class="navbar-brand" href="../index.html">Sabores da Terra<i class='fas fa-pepper-hot m-2'></i></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -38,11 +39,29 @@
                             <li><a class="dropdown-item" href="./italiana.html">Italiana</a></li>
                         </ul>
                     </li>
+                    <li class="nav-item"><a class="nav-link" href="./chefs.html">Chefes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./dicas.html">Dicas</a></li>
                     <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <!-- Header-->
+    <header class="py-4" style="background-color: #edd2a4;">
+        <div class="container px-4 px-lg-5 my-2 div-cozinha">
+            <div class="text-center">
+                <h1 class="display-4 fw-bolder">
+                    Cozinha Brasileira
+                </h1>
+                <p class="lead fw-normal mb-0">Fruto da mistura entre as culturas indígena, europeia e africana, <br> as
+                    receitas brasileiras irão colocar o seu paladar a sambar</p>
+                <img src="../assets/images/brazil_icon.png" alt="Brazil" class="my-3"
+                    style="width: 75px; height: auto;">
+            </div>
+        </div>
+    </header>
+
     <!-- Section-->
     <section class="py-5">
         <div class="container px-4 px-lg-5 mt-5">
@@ -50,14 +69,22 @@
                 <div class="col mb-5">
                     <div class="card h-100 item">
                         <!-- Product image-->
-                        <img class="card-img-top" src="../assets/images/bobo_camarao.jpg" alt="Imagem de bobo de camarao" />
+                        <img class="card-img-top" src="../assets/images/bobo_camarao.jpg"
+                            alt="Imagem de bobo de camarao" />
                         <!-- Product details-->
                         <div class="card-body p-4">
                             <div class="text-center">
                                 <!-- Product name-->
                                 <h5 class="fw-bolder">Bobó de Camarão</h5>
-                                <!-- Product price-->
-                                $40.00 - $80.00
+                                <!-- Product details-->
+                                <ul class="item-details">
+                                    <li>01:10 <i class="bi bi-stopwatch"></i></li>
+                                    <li>
+                                        <img src="../assets/images/chef_hat.svg" alt="chef_hat" style="width: 12%;">
+                                        <img src="../assets/images/chef_hat.svg" alt="chef_hat" style="width: 12%;">
+                                    </li>
+                                    <li>5 <i class="bi bi-person-fill"></i></li>
+                                </ul>
                             </div>
                         </div>
                         <!-- Product actions-->
@@ -92,50 +119,103 @@
                     </div>
                 </div>
                 <div class="col mb-5">
-                    <div class="card h-100 item">
-                        <!-- Sale badge-->
-                        <!-- <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale
-                        </div> -->
-                        <!-- Product image-->
-                        <img class="card-img-top" src="../assets/images/feijoada_brasileira.jpg" alt="Imagem de feijoada brasileira" />
-                        <!-- Product details-->
+                    <div class="card h-100">
+                        <!-- Recipe image-->
+                        <img class="card-img-top" src="../assets/images/feijoada_brasileira.jpg"
+                            alt="Feijoada à Brasileira" />
+                        <!-- Recipe details-->
                         <div class="card-body p-4">
                             <div class="text-center">
-                                <!-- Product name-->
-                                <h5 class="fw-bolder">Feijoada Brasileira</h5>
-                                <!-- Product reviews-->
-                                <div class="d-flex justify-content-center small text-warning mb-2">
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                </div>
-                                <!-- Product price-->
-                                <span class="text-muted text-decoration-line-through">$20.00</span>
-                                $18.00
+                                <!-- Recipe name-->
+                                <h5 class="fw-bolder">Feijoada à Brasileira</h5>
+                                <!-- Product details-->
+                                <ul class="item-details">
+                                    <li>01:30 <i class="bi bi-stopwatch"></i></li>
+                                    <li>
+                                        <img src="../assets/images/chef_hat.svg" alt="chef_hat" style="width: 12%;">
+                                    </li>
+                                    <li>7<i class="bi bi-person-fill"></i></li>
+                                </ul>
                             </div>
                         </div>
                         <!-- Product actions-->
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                             <div class="text-center">
                                 <button type="button" class="btn btn-outline-dark mt-auto " data-bs-toggle="modal"
-                                    data-bs-target="#Modal2">
+                                    data-bs-target="#ModalFeijoadaBrasileira">
                                     Ver Receita
                                 </button>
                             </div>
                             <!-- Modal -->
-                            <div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="exampleModalLabel"
-                                aria-hidden="true">
+                            <div class="modal fade" id="ModalFeijoadaBrasileira" tabindex="-1"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered modal-lg">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="exampleModalLabel">2</h1>
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Receita Feijoada à
+                                                Brasileira
+                                            </h1>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
-                                            ...
+                                            <h5>Ingredientes</h5>
+                                            <ul class="ingredientes-receita">
+                                                <li class="is-6">2 latas de feijão preto</li>
+                                                <li class="is-6">200g de chouriço</li>
+                                                <li class="is-6">150g de bacon fatiado</li>
+                                                <li class="is-6">600g de jardineira de novilho</li>
+                                                <li class="is-6">600g de entrecosto</li>
+                                                <li class="is-6">1 cebola</li>
+                                                <li class="is-6">4 dentes de alho</li>
+                                                <li class="is-6">2 folhas de louto</li>
+                                                <li class="is-6">1dl azeite</li>
+                                                <li class="is-6">Sumo de laranja</li>
+                                                <li class="is-6">Sal</li>
+                                            </ul>
+                                        </div>
+                                        <div class="preparo-receita">
+                                            <h5>Modo de Preparo</h5>
+                                            <ol>
+                                                <li style="text-align: justify;">Tempere a jardineira e o entrecosto com
+                                                    sal grosso, tape e guarde no frio de um dia para o outro.</li>
+                                                <li style="text-align: justify;">No dia seguinte passe as carnes por
+                                                    água fria e deite-as para um tacho.</li>
+                                                <li style="text-align: justify;">Junte água fria até ficar coberta e
+                                                    leve ao lume.</li>
+                                                <li style="text-align: justify;">Quando ferver junte os chouriços e
+                                                    deixe cozinhar durante 15 minutos.
+                                                </li>
+                                                <li style="text-align: justify;">Retire o chouriço e deixe as carnes
+                                                    cozinhar ate ficarem tenras, retire primeiro entremeada porque coze
+                                                    mais rápido.
+                                                </li>
+                                                <li style="text-align: justify;">Guarde a água de cozer as carnes.</li>
+                                                <li style="text-align: justify;">Corte as carnes em pedaços pequenos e o
+                                                    chouriço em rodelas grossas.</li>
+                                                <li style="text-align: justify;">Descasque a cebola e os alhos, pique
+                                                    tudo e deite para um tacho grande.
+                                                </li>
+                                                <li style="text-align: justify;">Junte o azeite e leve ao lume, deixe
+                                                    aquecer junte o bacon cortado em tiras finas e deixe cozinhar até
+                                                    ficar douradinho.
+                                                </li>
+                                                <li style="text-align: justify;">Junte as carnes cortadas, o louro, o
+                                                    feijão previamente passado por água fria e escorrido e o sumo de
+                                                    laranja.
+                                                </li>
+                                                <li style="text-align: justify;">Misture.</li>
+                                                <li style="text-align: justify;">Junte água de cozer as carnes até
+                                                    cobrir o feijão, misture e deixe cozinhar até ficar com um molho
+                                                    grosso.</li>
+                                                <li style="text-align: justify;">Verifique o sal junte um pouco de
+                                                    pimenta.</li>
+                                                <li style="text-align: justify;">Misture e deixe cozinhar mais um pouco
+                                                    mexendo de vez em quando.</li>
+                                                <li style="text-align: justify;">Sirva quente, acompanhe com mandioca
+                                                    frita, couve de caldo verde salteada, farofa, laranja cortada em
+                                                    meias luas, arroz seco e salada.</li>
+                                            </ol>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary"
@@ -159,9 +239,16 @@
                             <div class="text-center">
                                 <!-- Product name-->
                                 <h5 class="fw-bolder">Moqueca</h5>
-                                <!-- Product price-->
-                                <span class="text-muted text-decoration-line-through">$50.00</span>
-                                $25.00
+                                <!-- Product details-->
+                                <ul class="item-details">
+                                    <li>01:30 <i class="bi bi-stopwatch"></i></li>
+                                    <li>
+                                        <img src="../assets/images/chef_hat.svg" alt="chef_hat" style="width: 12%;">
+                                        <img src="../assets/images/chef_hat.svg" alt="chef_hat" style="width: 12%;">
+                                        <img src="../assets/images/chef_hat.svg" alt="chef_hat" style="width: 12%;">
+                                    </li>
+                                    <li>6 <i class="bi bi-person-fill"></i></li>
+                                </ul>
                             </div>
                         </div>
                         <!-- Product actions-->
@@ -198,22 +285,23 @@
                 <div class="col mb-5">
                     <div class="card h-100 item">
                         <!-- Product image-->
-                        <img class="card-img-top" src="../assets/images/Arroz_carreteiro.jpg" alt="Imagem de Arroz carreteiro" />
+                        <img class="card-img-top" src="../assets/images/Arroz_carreteiro.jpg"
+                            alt="Imagem de Arroz carreteiro" />
                         <!-- Product details-->
                         <div class="card-body p-4">
                             <div class="text-center">
                                 <!-- Product name-->
                                 <h5 class="fw-bolder">Arroz Carreteiro</h5>
-                                <!-- Product reviews-->
-                                <div class="d-flex justify-content-center small text-warning mb-2">
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                </div>
-                                <!-- Product price-->
-                                $40.00
+                                <!-- Product details-->
+                                <ul class="item-details">
+                                    <li>00:45 <i class="bi bi-stopwatch"></i></li>
+                                    <li>
+                                        <img src="../assets/images/chef_hat.svg" alt="chef_hat" style="width: 12%;">
+                                        <img src="../assets/images/chef_hat.svg" alt="chef_hat" style="width: 12%;">
+                                        <img src="../assets/images/chef_hat.svg" alt="chef_hat" style="width: 12%;">
+                                    </li>
+                                    <li>2 <i class="bi bi-person-fill"></i></li>
+                                </ul>
                             </div>
                         </div>
                         <!-- Product actions-->
@@ -259,7 +347,16 @@
                             <div class="text-center">
                                 <!-- Product name-->
                                 <h5 class="fw-bolder">Acarajé</h5>
-                                <!-- Product price-->
+                                <!-- Product details-->
+                                <ul class="item-details">
+                                    <li>00:45 <i class="bi bi-stopwatch"></i></li>
+                                    <li>
+                                        <img src="../assets/images/chef_hat.svg" alt="chef_hat" style="width: 12%;">
+                                        <img src="../assets/images/chef_hat.svg" alt="chef_hat" style="width: 12%;">
+                                        <img src="../assets/images/chef_hat.svg" alt="chef_hat" style="width: 12%;">
+                                    </li>
+                                    <li>2 <i class="bi bi-person-fill"></i></li>
+                                </ul>
                                 <span class="text-muted text-decoration-line-through">$50.00</span>
                                 $25.00
                             </div>
@@ -304,7 +401,16 @@
                             <div class="text-center">
                                 <!-- Product name-->
                                 <h5 class="fw-bolder">Brigadeiro</h5>
-                                <!-- Product price-->
+                                <!-- Product details-->
+                                <ul class="item-details">
+                                    <li>00:45 <i class="bi bi-stopwatch"></i></li>
+                                    <li>
+                                        <img src="../assets/images/chef_hat.svg" alt="chef_hat" style="width: 12%;">
+                                        <img src="../assets/images/chef_hat.svg" alt="chef_hat" style="width: 12%;">
+                                        <img src="../assets/images/chef_hat.svg" alt="chef_hat" style="width: 12%;">
+                                    </li>
+                                    <li>2 <i class="bi bi-person-fill"></i></li>
+                                </ul>
                                 $120.00 - $280.00
                             </div>
                         </div>
@@ -345,12 +451,12 @@
                         <!-- <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale
                         </div> -->
                         <!-- Product image-->
-                        <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                        <img class="card-img-top" src="../assets/images/quindim.jpg" alt="Imagem de quindim" />
                         <!-- Product details-->
                         <div class="card-body p-4">
                             <div class="text-center">
                                 <!-- Product name-->
-                                <h5 class="fw-bolder">Special Item</h5>
+                                <h5 class="fw-bolder">Quindim</h5>
                                 <!-- Product reviews-->
                                 <div class="d-flex justify-content-center small text-warning mb-2">
                                     <div class="bi-star-fill"></div>
@@ -359,7 +465,16 @@
                                     <div class="bi-star-fill"></div>
                                     <div class="bi-star-fill"></div>
                                 </div>
-                                <!-- Product price-->
+                                <!-- Product details-->
+                                <ul class="item-details">
+                                    <li>00:45 <i class="bi bi-stopwatch"></i></li>
+                                    <li>
+                                        <img src="../assets/images/chef_hat.svg" alt="chef_hat" style="width: 12%;">
+                                        <img src="../assets/images/chef_hat.svg" alt="chef_hat" style="width: 12%;">
+                                        <img src="../assets/images/chef_hat.svg" alt="chef_hat" style="width: 12%;">
+                                    </li>
+                                    <li>2 <i class="bi bi-person-fill"></i></li>
+                                </ul>
                                 <span class="text-muted text-decoration-line-through">$20.00</span>
                                 $18.00
                             </div>
@@ -412,7 +527,16 @@
                                     <div class="bi-star-fill"></div>
                                     <div class="bi-star-fill"></div>
                                 </div>
-                                <!-- Product price-->
+                                <!-- Product details-->
+                                <ul class="item-details">
+                                    <li>00:45 <i class="bi bi-stopwatch"></i></li>
+                                    <li>
+                                        <img src="../assets/images/chef_hat.svg" alt="chef_hat" style="width: 12%;">
+                                        <img src="../assets/images/chef_hat.svg" alt="chef_hat" style="width: 12%;">
+                                        <img src="../assets/images/chef_hat.svg" alt="chef_hat" style="width: 12%;">
+                                    </li>
+                                    <li>2 <i class="bi bi-person-fill"></i></li>
+                                </ul>
                                 $40.00
                             </div>
                         </div>
@@ -452,12 +576,13 @@
     </section>
 
     <!-- Footer-->
-    <footer class="py-5 text-center" style="background-color:cadetblue;">
-        <div class="container text-white">
-            <a href="https://www.instagram.com/gordongram/"><i class="bi bi-instagram"></i></a>
-            <a href="https://twitter.com/gordonramsay" class="ms-1"><i class="bi bi-twitter"></i></a>
-            <a href="https://www.facebook.com/gordonramsay" class="ms-1"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.youtube.com/channel/UCIEv3lZ_tNXHzL3ox-_uUGQ" class="ms-1"><i class="bi bi-youtube"></i></a>
+    <footer class="py-5 text-center">
+        <div class="container">
+            <a href="https://www.instagram.com/gordongram/"><i class="bi bi-instagram footer-icons"></i></a>
+            <a href="https://twitter.com/gordonramsay" class="ms-1"><i class="bi bi-twitter footer-icons"></i></a>
+            <a href="https://www.facebook.com/gordonramsay" class="ms-1"><i class="bi bi-facebook footer-icons"></i></a>
+            <a href="https://www.youtube.com/channel/UCIEv3lZ_tNXHzL3ox-_uUGQ" class="ms-1"><i
+                    class="bi bi-youtube footer-icons"></i></a>
             <p class="m-0">Copyright &copy; Sabores da Terra 2023</p>
         </div>
     </footer>
@@ -469,4 +594,5 @@
     <!-- HERE! -->
     <script src="../js/tiposCozinha.js"></script>
 </body>
+
 </html>
