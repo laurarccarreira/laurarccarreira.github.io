@@ -16,6 +16,7 @@
 .card.item:hover {
   animation: card_zoom 300ms forwards;
 }
+
 @keyframes card_zoom {
   100% {
     transform: scale(1.1);
@@ -27,30 +28,36 @@
   background-color: #edd2a4;
   color: #563c24;
 }
-.receita-da-semana{
+
+.receita-da-semana {
   box-shadow: 2px 5px 20px 0px;
 }
-.receita-titulo{
+
+.receita-titulo {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.receita-da-semana-origem{
+
+.receita-da-semana-origem {
   font-weight: 700;
   font-size: 1.5rem;
   color: #563c24;
   width: fit-content;
   text-decoration: none;
 }
-.receita-da-semana-origem:hover{
+
+.receita-da-semana-origem:hover {
   text-decoration: underline;
   cursor: pointer;
 }
+
 #map {
   width: 700px;
   height: 600px;
   margin: auto
 }
+
 .map-section {
   display: flex;
   justify-content: center;
@@ -67,25 +74,34 @@
   background-color: #edd2a4;
   color: #563c24;
 }
-.item-details{
+
+.item-details {
   margin: 0;
   padding: 0;
 }
-.item-details li{
+
+.item-details li {
   width: 100%;
   list-style: none;
   text-align: center;
 }
+
+.preparo-receita li{
+  text-align: justify;
+}
+
 /* Cozinha Modals */
-.ingredientes-receita{
+.ingredientes-receita {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
-.is-6{
+
+.is-6 {
   grid-column: auto/span 6;
 }
+
 /* Chefs */
-.chef-container p{
+.chef-container p {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -93,43 +109,52 @@
   gap: 20px;
   text-align: justify;
 }
-.chef-intro{
+
+.chef-intro {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 50px;
 }
-.chef-intro img{
+
+.chef-intro img {
   border-radius: 100%;
 }
+
 /* Dicas e Truques */
-.search-dicas{
+.search-dicas {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
   margin-bottom: 30px;
 }
-.search-btn{
+
+.search-btn {
   border: 1px solid #563c24;
   border-radius: 8px;
   padding: 5px 10px;
   background-color: #f2e0bf;
 }
-.search-btn:hover{
+
+.search-btn:hover {
   background-color: #563c24;
   color: white;
   transition-duration: 400ms;
 }
-.dicas-list{
+
+.dicas-list {
   font-size: 20px;
 }
-.dicas-list li{
+
+.dicas-list li {
   margin-bottom: 20px;
 }
-.no-display{
+
+.no-display {
   display: none;
 }
+
 /* About */
 .div-article {
   display: flex;
@@ -138,16 +163,19 @@
   width: 100%;
   text-align: center;
 }
+
 .about-topic {
   width: 100%;
   padding: 10px 0px;
   background-color: #edd2a4;
   color: #563c24;
 }
+
 .about-info {
   margin-top: 30px;
   width: 50%;
 }
+
 .about-info li {
   text-align: left;
 }
