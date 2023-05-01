@@ -45,13 +45,17 @@
   color: #563c24;
   width: fit-content;
   text-decoration: none;
+  margin-bottom: 10px;
 }
 
 .receita-da-semana-origem:hover {
   text-decoration: underline;
   cursor: pointer;
 }
-
+.card-body p{
+  position: relative;
+  top: 30px;
+}
 #map {
   width: 700px;
   height: 600px;
