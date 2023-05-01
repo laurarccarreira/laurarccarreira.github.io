@@ -13,31 +13,29 @@ array_dicas.forEach(element => {
         word = word.replace(',','').replace('.','');
         array_words.forEach(word2 => {
             word2 = word2.replace(',','').replace('.','');
-            if(word2==word)
+            if(word2.toLowerCase()==word.toLowerCase())
                 value = 0;
         });
         if(value==1)
-            array_words.push(word);
+            array_words.push(word.toLowerCase());
     });
 });
-array_words.forEach(word => {
-    let childElement = document.createElement('option');
-    childElement.value = word;
-    datalist_dicas.appendChild(childElement);
-});
-// 
+// Autocomplete Options
 input_field.addEventListener('input', function(){
-    datalist = document.getElementById('datalist-dicas');
-    inputValue = input_field.value.toLowerCase();
-    options = datalist.getElementsByTagName('option');
-    for (let i = 0; i < options.length; i++) {
-      const optionValue = options[i].value.toLowerCase();
-      if (optionValue.startsWith(inputValue) && inputValue != "") {
-        options[i].classList.remove('no-display');
-      } else {
-        options[i].classList.add('no-display');
-      }
-    }
+    const datalist = document.getElementById('datalist-dicas');
+    const inputValue = input_field.value.toLowerCase();
+    const options = datalist.getElementsByTagName('option');
+    const array_options = Array.from(options);
+    array_options.forEach(element => {
+        element.remove();
+    });
+    array_words.forEach(word => {
+        if(word.toLowerCase().startsWith(inputValue)){
+            let childElement = document.createElement('option');
+            childElement.value = word;
+            datalist_dicas.appendChild(childElement);
+        }
+    });
 });
 // Search Button Event
 search_btn.addEventListener('click', function(){
@@ -47,8 +45,10 @@ search_btn.addEventListener('click', function(){
         let string = element.innerHTML;
         let string_array = string.split(' ');
         string_array.forEach(word => {
-            if(word == filter.value){
-                console.log(string);
+            word = word.replace(',','').replace('.','');
+            console.log(word.toLowerCase())
+            console.log(filter.value.toLowerCase())
+            if(word.toLowerCase() == filter.value.toLowerCase()){
                 show = 1;
             }
         });
