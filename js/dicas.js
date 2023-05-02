@@ -54,16 +54,20 @@ search_btn.addEventListener('click', function(){
             if(!element.classList.contains('no-display')){
                 element.classList.add('no-display');
                 let value = element.getAttribute('value');
-                let dtElement = document.getElementById(value);
-                dtElement.classList.add('no-display');
+                if(value){
+                    let dtElement = document.getElementById(value);
+                    dtElement.classList.add('no-display');
+                }
             }
         }
         else{
             if(element.classList.contains('no-display')){
                 element.classList.remove('no-display');
                 let value = element.getAttribute('value');
-                let dtElement = document.getElementById(value);
-                dtElement.classList.remove('no-display');
+                if(value){
+                    let dtElement = document.getElementById(value);
+                    dtElement.classList.remove('no-display');
+                }
             }
         }
     });
