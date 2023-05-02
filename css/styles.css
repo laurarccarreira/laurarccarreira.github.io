@@ -11,6 +11,11 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+ .dropdown-item:active{
+  background-color: #edd2a4 !important;
+  color: #000000E6 !important;
+  box-shadow: inset 1px 1px 4px 0px;
+ }
  article {
 	max-width: 80%;
 	margin: 0 auto;
