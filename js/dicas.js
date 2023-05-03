@@ -24,6 +24,8 @@ const ingredientes = ['ovo', 'vinagre', 'romã', 'alho', 'azeite', 'batata', 'ma
 //             array_words.push(word.toLowerCase());
 //     });
 // });
+
+
 // Autocomplete Options
 input_field.addEventListener('keyup', function(){
     const datalist = document.getElementById('datalist-dicas');
@@ -41,61 +43,23 @@ input_field.addEventListener('keyup', function(){
         }
     });
 });
-// Search Button Event
-search_btn.addEventListener('click', function(){
-    let filter = document.getElementById('dicas-filter');
-    array_dicas.forEach(element => {
-        let show = 0;
-        let string = element.innerHTML;
-        let string_array = string.split(' ');
-        string_array.forEach(word => {
-            word = word.replace(',','').replace('.','');
-            if(word.toLowerCase().startsWith(filter.value.toLowerCase())){
-                console.log("here");
-                show = 1;
-            }
-        });
-        if(show == 0 && filter.value != ""){
-            if(!element.classList.contains('no-display')){
-                element.classList.add('no-display');
-                let value = element.getAttribute('value');
-                if(value){
-                    let dtElement = document.getElementById(value);
-                    dtElement.classList.add('no-display');
-                }
-            }
-        }
-        else{
-            if(element.classList.contains('no-display')){
-                element.classList.remove('no-display');
-                let value = element.getAttribute('value');
-                if(value){
-                    let dtElement = document.getElementById(value);
-                    dtElement.classList.remove('no-display');
-                }
-            }
-        }
+
+
+const keyword = document.getElementById('dicas-filter');
+const dlElement = document.querySelector('dl');
+const ddElements = dlElement.querySelectorAll('dd');
+
+search_btn.addEventListener("click", () => {
+    let i = 0;
+    let search_result = '';
+    const searchTerm = keyword.value.toLowerCase();
+
+    ddElements.forEach((dd) => {
+        if (dd.textContent.includes(searchTerm)) {
+            i++;
+            console.log(dd.textContent);
+            search_result +=` <dt>${i}</dt> <dd>${dd.textContent}</dd> `;
+        } 
     });
-
-})
-
-
-// const keyword = document.getElementById('dicas-filter');
-// let search_btn = document.getElementById('search-dicas');
-// const dlElement = document.querySelector('dl');
-// const ddElements = dlElement.querySelectorAll('dd');
-
-// search_btn.addEventListener("click", () => {
-//     let i = 0;
-//     let search_result = '';
-//     const searchTerm = keyword.value.toLowerCase();
-
-//     ddElements.forEach((dd) => {
-//         if (dd.textContent.includes(searchTerm)) {
-//             i++;
-//             console.log(dd.textContent);
-//             search_result +=` <dt>${i}</dt> <dd>${dd.textContent}</dd> `;
-//         } 
-//     });
-//     dlElement.innerHTML = search_result;
-// });
+    dlElement.innerHTML = search_result;
+});
