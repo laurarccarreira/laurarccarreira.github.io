@@ -3,23 +3,27 @@ let array_dicas = Array.from(list_dicas);
 let search_btn = document.getElementById('search-dicas');
 let datalist_dicas = document.getElementById('datalist-dicas');
 let input_field = document.getElementById('dicas-filter');
+
+
+const ingredientes = ['ovo', 'vinagre', 'romã', 'alho', 'azeite', 'batata', 'manteiga', 'ervas', 'clara', 'sal', 'limão', 'pão', 'maçã', 'gengibre', 'queijo', 'leite', 'cebola', 'carne', 'ossos', 'legumes', 'frango', 'especiarias', 'salada', 'molho', 'tomate', 'natas', 'iogurte', 'mel', 'banana', 'croutons', 'abacate', 'mostarda'];
+
 // Store all words
-let array_words = Array.prototype; 
-array_dicas.forEach(element => {
-    let string = element.innerHTML;
-    let string_array = string.split(' ');
-    string_array.forEach(word => {
-        let value = 1;
-        word = word.replace(',','').replace('.','');
-        array_words.forEach(word2 => {
-            word2 = word2.replace(',','').replace('.','');
-            if(word2.toLowerCase()==word.toLowerCase())
-                value = 0;
-        });
-        if(value==1)
-            array_words.push(word.toLowerCase());
-    });
-});
+// let array_words = Array.prototype; 
+// array_dicas.forEach(element => {
+//     let string = element.innerHTML;
+//     let string_array = string.split(' ');
+//     string_array.forEach(word => {
+//         let value = 1;
+//         word = word.replace(',','').replace('.','');
+//         array_words.forEach(word2 => {
+//             word2 = word2.replace(',','').replace('.','');
+//             if(word2.toLowerCase()==word.toLowerCase())
+//                 value = 0;
+//         });
+//         if(value==1)
+//             array_words.push(word.toLowerCase());
+//     });
+// });
 // Autocomplete Options
 input_field.addEventListener('keyup', function(){
     const datalist = document.getElementById('datalist-dicas');
@@ -29,7 +33,7 @@ input_field.addEventListener('keyup', function(){
     array_options.forEach(element => {
         element.remove();
     });
-    array_words.forEach(word => {
+    ingredientes.forEach(word => {
         if(word.toLowerCase().startsWith(inputValue) && inputValue != ""){
             let childElement = document.createElement('option');
             childElement.value = word;
@@ -46,7 +50,8 @@ search_btn.addEventListener('click', function(){
         let string_array = string.split(' ');
         string_array.forEach(word => {
             word = word.replace(',','').replace('.','');
-            if(word.toLowerCase() == filter.value.toLowerCase()){
+            if(word.toLowerCase().startsWith(filter.value.toLowerCase())){
+                console.log("here");
                 show = 1;
             }
         });
@@ -73,6 +78,8 @@ search_btn.addEventListener('click', function(){
     });
 
 })
+
+
 // const keyword = document.getElementById('dicas-filter');
 // let search_btn = document.getElementById('search-dicas');
 // const dlElement = document.querySelector('dl');
