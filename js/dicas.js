@@ -1,5 +1,5 @@
-let list_dicas = document.getElementsByClassName('dicas-list');
-let array_dicas = Array.from(list_dicas);
+// let list_dicas = document.getElementsByClassName('dicas-list');
+// let array_dicas = Array.from(list_dicas);
 let search_btn = document.getElementById('search-dicas');
 let datalist_dicas = document.getElementById('datalist-dicas');
 let input_field = document.getElementById('dicas-filter');
