@@ -11,6 +11,11 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+ button:active{
+  transform: scale(0.9);
+  box-shadow: grey 0px 0px 15px 3px;
+  transition:  ease-in-out 150ms !important;
+ }
  .dropdown-item:active{
   background-color: #edd2a4 !important;
   color: #000000E6 !important;
