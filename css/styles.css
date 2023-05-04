@@ -11,6 +11,11 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+ .chef-picture:hover {
+  opacity: 0.60;
+ }
+ 
  .navbar * .active{
   font-weight: 500 !important;
  }
