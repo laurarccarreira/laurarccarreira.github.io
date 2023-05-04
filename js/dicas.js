@@ -57,11 +57,11 @@ input_field.addEventListener('keypress', function(event){
         ddElements.forEach((dd) => {
             if (dd.textContent.includes(searchTerm)) {
                 i++;
-                console.log(dd.textContent);
-                search_result +=` <dt>${i}</dt> <dd>${dd.textContent}</dd> `;
+                search_result +=` <dt>${i}</dt> <dd class="dicas-list">${dd.textContent}</dd> `;
             } 
         });
         dlElement.innerHTML = search_result;
+        addDicasEvent();
     }
 })
 search_btn.addEventListener("click", () => {
@@ -72,9 +72,39 @@ search_btn.addEventListener("click", () => {
     ddElements.forEach((dd) => {
         if (dd.textContent.includes(searchTerm)) {
             i++;
-            console.log(dd.textContent);
-            search_result +=` <dt>${i}</dt> <dd>${dd.textContent}</dd> `;
+            search_result +=` <dt>${i}</dt> <dd class="dicas-list">${dd.textContent}</dd> `;
         } 
     });
     dlElement.innerHTML = search_result;
+    addDicasEvent();
 });
+function addDicasEvent(){
+    let list_dicas = document.getElementsByClassName('dicas-list');
+    let array_dicas = Array.from(list_dicas);
+    array_dicas.forEach(element => {
+        element.addEventListener('click', function(){
+            let ingredienteToSearch = [];
+            ingredientes.forEach(ingrediente => {
+                if(element.textContent.includes(ingrediente)){
+                    ingredienteToSearch.push(ingrediente);
+                }
+            });
+            console.log(ingredienteToSearch);
+            let i = 0;
+            let search_result = '';
+            ddElements.forEach((dd) => {
+                let display = 0;
+                ingredienteToSearch.forEach(ingrediente => {
+                    if (dd.textContent.includes(ingrediente) && display == 0) {
+                        i++;
+                        search_result +=` <dt>${i}</dt> <dd class="dicas-list">${dd.textContent}</dd> `;
+                        display = 1;
+                    } 
+                })
+            });
+            dlElement.innerHTML = search_result;
+            addDicasEvent();
+            })
+    });
+}
+addDicasEvent();

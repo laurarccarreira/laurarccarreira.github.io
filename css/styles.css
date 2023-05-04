@@ -11,7 +11,19 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-
+ dl > dd:hover:active{
+  transform: scale(0.99) !important;
+ }
+ dl > dd:hover {
+  animation: go_right 300ms forwards;
+  cursor: pointer;
+ }
+ @keyframes go_right {
+  100%{
+    transform: translate(10px,0%);
+    box-shadow: 0px 0px 5px 0px;
+  }
+ }
  .chef-picture:hover {
   opacity: 0.60;
  }
