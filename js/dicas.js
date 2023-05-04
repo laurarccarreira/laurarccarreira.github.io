@@ -48,7 +48,22 @@ input_field.addEventListener('keyup', function(){
 const keyword = document.getElementById('dicas-filter');
 const dlElement = document.querySelector('dl');
 const ddElements = dlElement.querySelectorAll('dd');
+input_field.addEventListener('keypress', function(event){
+    if(event.keyCode == 13){
+        let i = 0;
+        let search_result = '';
+        const searchTerm = keyword.value.toLowerCase();
 
+        ddElements.forEach((dd) => {
+            if (dd.textContent.includes(searchTerm)) {
+                i++;
+                console.log(dd.textContent);
+                search_result +=` <dt>${i}</dt> <dd>${dd.textContent}</dd> `;
+            } 
+        });
+        dlElement.innerHTML = search_result;
+    }
+})
 search_btn.addEventListener("click", () => {
     let i = 0;
     let search_result = '';
